@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4e9">
+  <meta name="description" content="给安行的一份小小生日惊喜。打开礼物，许个愿，再读一封写给你的信。">
+  <title>安行，生日快乐！</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stripe-background" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <span class="brand"><span class="brand-star" aria-hidden="true">✳</span> 一份小小的生日惊喜</span>
+    <button class="music-button" id="music-button" aria-label="播放生日快乐歌" aria-pressed="false"><span class="music-icon" aria-hidden="true">♫</span><span id="music-label">音乐关</span></button>
+  </header>
+
+  <main>
+    <article class="birthday-card">
+      <div class="card-topline"><span>FOR YOU, ANXING</span><span class="tiny-spark" aria-hidden="true">✦</span><span>A LITTLE BIRTHDAY MAGIC</span></div>
+      <div class="intro">
+        <p class="eyebrow" id="eyebrow">今天，快乐的主角是你</p>
+        <h1 id="headline">有一份快乐，<br>正在等你拆开<span class="red-dot">。</span></h1>
+        <p class="subtitle" id="subtitle">把平凡的一天，变成专属于你的纪念日。</p>
+      </div>
+
+      <section id="gift-scene" class="gift-scene" aria-label="生日礼物">
+        <span class="floating-doodle doodle-one" aria-hidden="true">✧</span><span class="floating-doodle doodle-two" aria-hidden="true">✳</span>
+        <button class="gift-button" id="gift-button" aria-label="拆开生日礼物">
+          <svg class="gift-svg" viewBox="0 0 360 290" role="img" aria-label="系着红色蝴蝶结的蓝色礼物盒">
+            <ellipse class="gift-shadow" cx="180" cy="267" rx="97" ry="12" fill="#384d64" opacity=".12"/>
+            <g class="gift-body">
+              <path d="M86 124h188v117q0 13-13 13H99q-13 0-13-13z" fill="#a9c9e2" stroke="#344757" stroke-width="3"/>
+              <path d="M94 132h171v8H94z" fill="#739ebf" opacity=".45"/>
+              <path d="M166 128h30v126h-30z" fill="#ed6555" stroke="#344757" stroke-width="3"/>
+              <path d="M111 164l7 6-7 7-7-7zm126 43 7 6-7 7-7-7z" fill="#fff5dd"/>
+              <circle cx="131" cy="222" r="4" fill="#fff5dd"/><circle cx="231" cy="158" r="4" fill="#fff5dd"/>
+              <g class="gift-lid">
+                <path d="M179 101c-31-5-74-15-62-40 13-27 53 4 62 40z" fill="#ef7663" stroke="#344757" stroke-width="3"/>
+                <path d="M182 101c30-5 74-15 62-40-13-27-53 4-62 40z" fill="#ef7663" stroke="#344757" stroke-width="3"/>
+                <path d="M128 65q25 7 48 34m56-34q-25 7-48 34" fill="none" stroke="#b7463b" stroke-width="3" stroke-linecap="round"/>
+                <rect x="74" y="101" width="212" height="39" rx="9" fill="#bad8eb" stroke="#344757" stroke-width="3"/>
+                <path d="M165 102h31v38h-31z" fill="#ed6555" stroke="#344757" stroke-width="3"/>
+                <ellipse cx="180" cy="100" rx="13" ry="10" fill="#e05b4c" stroke="#344757" stroke-width="3"/>
+              </g>
+              <g transform="rotate(12 254 170)"><path d="M246 138v23" stroke="#344757" stroke-width="2"/><rect x="229" y="157" width="36" height="47" rx="4" fill="#fff7df" stroke="#344757" stroke-width="2"/><path d="M240 179c-7-9-13 3 7 12 20-9 14-21 7-12-2-5-5-5-7 0" fill="#e56c59" transform="translate(-1 -2) scale(.96)"/></g>
+            </g>
+          </svg>
+        </button>
+        <p class="hand-note">给安行，亲手拆开的快乐 <span aria-hidden="true">↗</span></p>
+        <button class="text-button" id="open-button">点一下，拆开礼物 <span aria-hidden="true">→</span></button>
+      </section>
+
+      <section id="birthday-scene" class="birthday-scene" aria-label="生日蛋糕与祝福" hidden>
+        <div class="cake-wrap">
+          <span class="floating-doodle cake-star-left" aria-hidden="true">✦</span><span class="floating-doodle cake-star-right" aria-hidden="true">✧</span>
+          <svg class="cake-svg" viewBox="0 0 400 310" role="img" aria-label="点着三支蜡烛的草莓奶油生日蛋糕">
+            <ellipse cx="200" cy="282" rx="131" ry="14" fill="#384d64" opacity=".1"/>
+            <g class="cake-float">
+              <ellipse cx="200" cy="263" rx="136" ry="18" fill="#b7d4df" stroke="#465464" stroke-width="2.5"/>
+              <path d="M86 167h228v78c0 26-228 26-228 0z" fill="#f4c8ad" stroke="#465464" stroke-width="2.5"/>
+              <path d="M87 214q113 31 226 0v17q-113 31-226 0z" fill="#e8887c"/>
+              <path d="M86 168c0-28 228-28 228 0v28q-3 15-15 1v-8q-10-8-15 5v14q-10 18-20-1v-12q-8-13-17 1v22q-12 20-22-2v-18q-10-12-19 3v6q-11 14-20-1v-9q-11-14-20 0v20q-11 19-22-1v-22q-9-10-18 3v3q-10 16-20-1v-12q-11-10-20 1v7q-11 10-10-5z" fill="#fff9e9" stroke="#465464" stroke-width="2.5"/>
+              <ellipse cx="200" cy="166" rx="114" ry="28" fill="#fff9e9" stroke="#465464" stroke-width="2.5"/>
+              <path d="M115 164q84 28 170 0" fill="none" stroke="#eedbba" stroke-width="2"/>
+              <g stroke="#465464" stroke-width="2.5">
+                <rect x="151" y="103" width="14" height="60" rx="3" fill="#a7c4e1"/><rect x="193" y="88" width="14" height="72" rx="3" fill="#ed9d95"/><rect x="235" y="103" width="14" height="60" rx="3" fill="#9fbf9f"/>
+              </g>
+              <g stroke="#fff9e9" stroke-width="3"><path d="m152 116 12 7m-12 6 12 7m-12 6 12 7m30-47 12 7m-12 6 12 7m-12 6 12 7m-12 6 12 7m30-28 12 7m-12 6 12 7m-12 6 12 7"/></g>
+              <g class="flame flame-one"><path d="M158 73c-4 8-15 19-8 26 12 11 23-5 8-26" fill="#edaa4b"/><path d="M158 85c-8 9-7 14 0 14 7-1 5-7 0-14" fill="#fff3bc"/></g>
+              <g class="flame flame-two"><path d="M200 57c-4 8-15 19-8 26 12 11 23-5 8-26" fill="#edaa4b"/><path d="M200 69c-8 9-7 14 0 14 7-1 5-7 0-14" fill="#fff3bc"/></g>
+              <g class="flame flame-three"><path d="M242 73c-4 8-15 19-8 26 12 11 23-5 8-26" fill="#edaa4b"/><path d="M242 85c-8 9-7 14 0 14 7-1 5-7 0-14" fill="#fff3bc"/></g>
+              <g fill="#e76d59" stroke="#465464" stroke-width="2"><path d="M119 155c-20-31 25-35 20-9-4 14-15 20-20 9z"/><path d="M267 155c-20-31 25-35 20-9-4 14-15 20-20 9z"/></g>
+              <path d="m118 134 11 7 5-12m132 5 11 7 5-12" fill="#8da980" stroke="#465464" stroke-width="2" stroke-linejoin="round"/>
+              <g fill="#ffe8ba"><circle cx="124" cy="149" r="1.5"/><circle cx="132" cy="147" r="1.5"/><circle cx="128" cy="156" r="1.5"/><circle cx="272" cy="149" r="1.5"/><circle cx="280" cy="147" r="1.5"/><circle cx="276" cy="156" r="1.5"/></g>
+            </g>
+          </svg>
+          <p class="cake-caption">许个愿吧，让所有美好慢慢发生。</p>
+        </div>
+
+        <div class="letter-area">
+          <button id="envelope-button" class="envelope-button" aria-expanded="false" aria-controls="letter">
+            <svg viewBox="0 0 220 140" class="envelope-svg" aria-hidden="true"><rect x="12" y="17" width="196" height="112" rx="7" fill="#eadbc0" stroke="#655e52" stroke-width="2"/><path class="envelope-flap" d="m13 21 97 65 97-65" fill="#f3e7cf" stroke="#655e52" stroke-width="2" stroke-linejoin="round"/><path d="m14 126 69-53m123 53-69-53" fill="none" stroke="#b6a58b" stroke-width="2"/><circle cx="110" cy="83" r="17" fill="#bd5548"/><path d="M110 79c-8-10-16 4 0 12 16-8 8-22 0-12" fill="#fff0d5"/></svg>
+            <span id="envelope-label">还有几句话，想说给你听</span><span class="envelope-hint" id="envelope-hint">点击信封 · 展开这封信 ↓</span>
+          </button>
+          <div id="letter" class="letter-reveal" inert>
+            <div class="letter-clip"><div class="letter-paper">
+              <div class="letter-meta"><span>A LETTER TO YOU</span><span aria-hidden="true">✦</span></div>
+              <h2>亲爱的安行：</h2>
+              <p>祝安行又小一岁！</p>
+              <p>往后的日子里请持续为自己发光发热，继续追寻那心之所向吧！</p>
+              <div class="letter-signoff">愿你，永远有光。<span aria-hidden="true">♡</span></div>
+              <div class="letter-bottom">HAPPY BIRTHDAY, ALWAYS.</div>
+            </div></div>
+          </div>
+        </div>
+      </section>
+      <div class="card-bottomline"><span aria-hidden="true">✧</span><span>愿每一岁的你，都更喜欢自己。</span><span aria-hidden="true">✧</span></div>
+    </article>
+    <p class="background-hint"><span aria-hidden="true">✴</span> 点点背景，为今天放一场烟花</p>
+  </main>
+  <footer>MADE WITH A LITTLE MAGIC & A LOT OF LOVE</footer>
+  <div id="fireworks" aria-hidden="true"></div>
+  <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+  <script src="script.js"></script>
+</body>
+</html>
